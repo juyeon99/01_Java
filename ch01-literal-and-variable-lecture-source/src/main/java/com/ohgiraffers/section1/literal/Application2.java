@@ -71,6 +71,14 @@ public class Application2 {
         System.out.println("juyeon" + 'a');     // 문자와의 연산
         System.out.println("juyeon" + true);    // 논리값과의 연산
 
-        System.out.println("123" + "456");
+        System.out.println("123" + "456");  // 문자열 합치기
+
+        // 논리값 끼리의 연산은 모든 연산자 사용이 불가능
+        // 논리값과 정수/실수/문자의 연산도 불가능
+//        System.out.println(true + false);
+
+        // 논리값과 문자열의 연산
+        System.out.println("\n============= 논리값과 문자열의 연산 =============");
+        System.out.println(true + "a");
     }
 }
