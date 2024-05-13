@@ -1,4 +1,4 @@
-package com.ohgiraffers.section02.variable;
+package com.ohgiraffers.section2.variable;
 
 public class Application3 {
     public static void main(String[] args) {
@@ -75,6 +75,6 @@ public class Application3 {
         boolean isAlive = true;
         boolean isTrue = true;
 
-        
+
     }
 }
