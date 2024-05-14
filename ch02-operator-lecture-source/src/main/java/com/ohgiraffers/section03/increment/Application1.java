@@ -34,6 +34,6 @@ public class Application1 {
         System.out.println("addNum = " + addNum);
         System.out.println("num1 = " + num1);
 
-        
+
     }
 }
