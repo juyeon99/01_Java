@@ -42,5 +42,6 @@ public class Application1 {
 
         longMul = (long) firstNum * secondNum;  // 강제 형변환
         System.out.println("longMul = " + longMul);
+        // change
     }
 }
