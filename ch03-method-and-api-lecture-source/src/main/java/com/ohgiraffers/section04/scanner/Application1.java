@@ -72,7 +72,12 @@ public class Application1 {
         boolean isTrue = sc.nextBoolean();
         System.out.println("입력하신 논리값은 " + isTrue + "입니다.");
 
+
         // 문자추출
+        // https://www.reddit.com/r/learnjava/comments/iefj2q/scannextint_vs_integervalueofscannextline/?rdt=39061
+        // .nextInt() leaves a new line character after you read a number.
+        // If you use nextLine() after nextInt() the new line character will be read ('\n')
+        sc.nextLine();  // handle new line character in the buffer
         System.out.print("아무 문자나 입력하세요: ");
         String str = sc.nextLine();
         char ch = str.charAt(0);
