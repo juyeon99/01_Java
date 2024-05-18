@@ -95,6 +95,8 @@ public class D_switch {
         }
         if(price > 0){
             System.out.println(price + "원을 투입해주세요.");
+        } else{
+            System.out.println("잘못 입력하셨습니다.");
         }
     }
 
@@ -120,7 +122,6 @@ public class D_switch {
             default:
                 System.out.println("잘못 입력했구나.. 돌아가거라..");
         }
-
         System.out.println("그렇게.. 산신령은.. 다시 연못으로.. 사라지고 말았다..");
     }
 }
