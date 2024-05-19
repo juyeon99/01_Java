@@ -17,7 +17,7 @@ public class Application {
 
         D_switch d = new D_switch();
 //        d.testSimpleSwitchStatement();
-//        d.testSwitchVendingMachine();
-        d.testSwitchAx();
+        d.testSwitchVendingMachine();
+//        d.testSwitchAx();
     }
 }
