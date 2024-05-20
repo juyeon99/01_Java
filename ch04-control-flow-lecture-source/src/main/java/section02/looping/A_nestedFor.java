@@ -51,11 +51,55 @@ public class A_nestedFor {
     public void printTriangleStars(){
         Scanner sc = new Scanner(System.in);
         System.out.print("출력할 줄의 수: ");
-        System.out.println();
         int row = sc.nextInt();
 
         for (int i = 1; i <= row; i++){
             for (int j = 0; j < i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public void printTriangleStarsInReverse(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("출력할 줄의 수: ");
+        int row = sc.nextInt();
+
+        for (int i = row; i >= 0; i--){
+            for (int j = 0; j < i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public void printSymTriangleStars(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("출력할 줄의 수: ");
+        int row = sc.nextInt();
+
+        for (int i = 1; i <= row; i++){
+            for (int j = 0; j < row-i; j++){
+                System.out.print(" ");
+            }
+            for (int j = row-i; j < row; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    public void printPyramidTriangleStars() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("출력할 줄의 수: ");
+        int row = sc.nextInt();
+
+        for (int i = 1; i <= row; i++){
+            for (int j = 0; j < row-i; j++){
+                System.out.print(" ");
+            }
+            for (int j = 0; j < i*2-1; j++){
                 System.out.print("*");
             }
             System.out.println();
