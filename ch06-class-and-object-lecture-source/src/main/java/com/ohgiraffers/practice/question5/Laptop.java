@@ -49,6 +49,6 @@ public class Laptop {
 
     public void print(){
         System.out.println("브랜드: " + this.brand +
-                ", 모델: " + this.model + ", RAM: " + this.RAM + "GB, SSD: " + this.SSD + "GB 입니다.");
+                ", 모델: " + this.model + ", RAM: " + this.RAM + "GB, SSD: " + this.SSD + "GB");
     }
 }
