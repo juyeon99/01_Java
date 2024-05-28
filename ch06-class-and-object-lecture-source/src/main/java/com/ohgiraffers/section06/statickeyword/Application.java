@@ -17,7 +17,7 @@ public class Application {
 
         StaticFieldTest sft1 = new StaticFieldTest(); // 기본값
 
-        // 두필드가 가지고 있는 값 확인
+        // 두 필드가 가지고 있는 값 확인
         System.out.println("non-static field : " + sft1.getNonStaticCount()); // 0
         System.out.println("static field : " + sft1.getStaticCount()); // 0
 

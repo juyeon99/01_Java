@@ -48,7 +48,7 @@ public class Application {
         r1.calcRound(); // 둘레 출력
 
         // 가변인자
-        //pt.testVariableLengthArrayParameter();
+        // pt.testVariableLengthArrayParameter();
         pt.testVariableLengthArrayParameter("홍길동"); // 가변인자가 전달되지 않아도 괜찮음
         pt.testVariableLengthArrayParameter("홍길동", "볼링"); // 1개 가능
         pt.testVariableLengthArrayParameter("홍길동", "볼링", "당구"); //2개도 가능
