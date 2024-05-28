@@ -56,21 +56,25 @@ public class Kiosk {
 
         // Arrays : 배열에 관련된 기능을 미리 만들어놓은 패키지
         // toString : 객체 안에 있는 값을 꺼내서 보여줌.
-        System.out.println("> 주문하신 커피" + Arrays.toString(coffees));
+        if(coffees != null) {
+            System.out.println("> 주문하신 커피" + Arrays.toString(coffees));
+        } else {
+            System.out.println("주방에 커피가루가 부족합니다. 죄송합니다");
+        }
     }
 
     private Order createOrder(String menuName) {
-        
+
         // 옵션
         String option = inputOption();
         // 수량
         int count = inputCount();
-        
+
         Order order = new Order(menuName, option, count);
-        
+
         // 주문 확인
         boolean confirmed = confirmedOrder(order);
-        
+
         return confirmed ? order : null;
     }
 
