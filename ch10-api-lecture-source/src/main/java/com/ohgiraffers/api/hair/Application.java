@@ -121,7 +121,7 @@ public class Application {
 
             String strBirthday = arr[5];
             LocalDate birthday = null;
-            if(strBirthday != ""){
+            if(!strBirthday.equals("")){
                 String[] birthArr = strBirthday.split("/");
                 birthday = LocalDate.of(
                         Integer.parseInt(birthArr[0]),
@@ -131,13 +131,13 @@ public class Application {
 
             String strResDate = arr[6];
             LocalDate reservation_date = null;
-//            if(!strResDate.equals("")){
-//                String[] resDateArr = strResDate.split("-");
-//                reservation_date = LocalDate.of(
-//                        Integer.parseInt(resDateArr[0]),
-//                        Integer.parseInt(resDateArr[1]),
-//                        Integer.parseInt(resDateArr[2]));
-//            }
+            if(!strResDate.equals("")){
+                String[] resDateArr = strResDate.split("-");
+                reservation_date = LocalDate.of(
+                        Integer.parseInt(resDateArr[0]),
+                        Integer.parseInt(resDateArr[1]),
+                        Integer.parseInt(resDateArr[2]));
+            }
 
             String strResTime = arr[7];
             LocalTime reservation_time = null;
