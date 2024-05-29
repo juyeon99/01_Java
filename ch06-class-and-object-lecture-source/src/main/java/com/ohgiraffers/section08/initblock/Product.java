@@ -1,7 +1,5 @@
 package com.ohgiraffers.section08.initblock;
 
-import javax.swing.*;
-
 public class Product {
 
     // 1. 필드를 초기화 하지 않으면 JVM이 정한 기본값으로 객체가 생성된다.
@@ -39,6 +37,8 @@ public class Product {
         brand = "엘지";
         System.out.println("정적 초기화 블럭 동작함...");
     }
+
+    public Product(){}
 
     public Product(String name, int price, String brand) {
         this.name = name;

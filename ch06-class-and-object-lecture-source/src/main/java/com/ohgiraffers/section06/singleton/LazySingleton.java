@@ -2,10 +2,10 @@ package com.ohgiraffers.section06.singleton;
 
 public class LazySingleton {
 
-    // 클래스가 초기화 되는 시점에 정적 필드를 선언해두고 null 초기화가 됨
+    // 클래스가 initialize 되는 시점에 static field를 선언해두고 null 초기화가 됨
     private static LazySingleton lazy;
 
-    // 생성자 호출을 통한 인스턴스 생성 제한
+    // constructor 호출을 통한 인스턴스 생성 제한
     private LazySingleton() {}
 
     public static LazySingleton getInstance() {

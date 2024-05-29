@@ -30,8 +30,8 @@ public class Application {
 
 
         StaticFieldTest sft2 = new StaticFieldTest();
-        System.out.println("non-static field : " + sft2.getNonStaticCount()); //
-        System.out.println("static field : " + sft2.getStaticCount()); //
+        System.out.println("non-static field : " + sft2.getNonStaticCount()); // 0
+        System.out.println("***static field : " + sft2.getStaticCount()); // 1
 
         /*
         * 인스턴스 변수의 경우 sft1 과 sft2 두 개의 인스턴스가 서로 값을 공유하지 못하고

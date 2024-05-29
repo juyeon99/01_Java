@@ -2,7 +2,6 @@ package com.ohgiraffers.section08.initblock;
 
 public class Application {
     public static void main(String[] args) {
-
         /*
         * 초기화 블럭
         * 복잡한 초기화를 수행 할 수 있는 블럭을 제공, 인스턴스 초기화 블럭과 정적 초기화 블럭으로 구분
@@ -32,10 +31,10 @@ public class Application {
         // System.out.println(product.getInformation());
 
         // 명시적 초기화로 필드 초기화
-        //System.out.println(product.getInformation());
+        // System.out.println(product.getInformation());
 
         // 초기화블럭으로 필드 초기화
-        //System.out.println(product.getInformation());
+        // System.out.println(product.getInformation());
 
         // 매개변수 있는 생성자를 이용한 초기화 확인
         Product product = new Product("대륙폰", 30000, "샤오미");
@@ -46,6 +45,5 @@ public class Application {
         * 인스턴스 변수 : 기본값 -> 명시적초기값 -> 인스턴스초기화블럭 -> 생성자
         * 클래스 변수 : 기본값 -> 명시적초기값 -> 정적초기화블럭 -> 인스턴스초기화블럭 -> 생성자
         * */
-
     }
 }
