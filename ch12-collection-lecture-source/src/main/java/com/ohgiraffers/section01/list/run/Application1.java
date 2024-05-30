@@ -41,7 +41,7 @@ public class Application1 {
          * ArrayList
          * => 배열의 단점을 보완
          * 배열의 단점: 크기 변경 불가, element의 추가, 수정, 삭제, 정렬 복잡함
-         * 크기 변경(새로운 더 큰 배열 만들고 옮기기), element 추가, 수정, 삭제, 정렬 기능ㅇ르 미리 메소드로 구현해서 제공
+         * 크기 변경(새로운 더 큰 배열 만들고 옮기기), element 추가, 수정, 삭제, 정렬 기능을 미리 메소드로 구현해서 제공
          * */
         ArrayList<Object> alist = new ArrayList<>();
 
@@ -107,8 +107,9 @@ public class Application1 {
         * Collections 클래스 사용 -> Collection 사용되는 기능을 static method로 구현한 클래스
         * */
         Collections.sort(strList);
+        System.out.println("sorted strList: " + strList);
         Collections.reverse(strList);
-        System.out.println("strList: " + strList);
+        System.out.println("reverse strList: " + strList);
 
         /*
         * ArrayList에는 역순으로 정렬하는 기능X
