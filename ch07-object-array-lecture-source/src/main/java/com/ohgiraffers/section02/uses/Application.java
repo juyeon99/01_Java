@@ -3,9 +3,7 @@ package com.ohgiraffers.section02.uses;
 import java.util.Scanner;
 
 public class Application {
-
     public static void main(String[] args) {
-
         /*
         * 여러명의 정보를 받아와서 등록
         * 등록한거를 객체 배열로 저장

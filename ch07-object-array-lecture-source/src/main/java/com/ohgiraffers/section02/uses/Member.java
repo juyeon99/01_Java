@@ -1,7 +1,6 @@
 package com.ohgiraffers.section02.uses;
 
 public class Member {
-
     private int num;
     private String id;
     private String pwd;

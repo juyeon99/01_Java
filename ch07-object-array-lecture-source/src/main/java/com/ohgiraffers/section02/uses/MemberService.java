@@ -2,10 +2,7 @@ package com.ohgiraffers.section02.uses;
 
 public class MemberService {
     // 연결만 해주는 곳이고, 실제구현은 다른곳에서 한다.
-
-
     public void signUpMembers() {
-
         Member[] members = new Member[5];
 
         // 객체로 입력을 잘 받았다고 가정.
@@ -22,7 +19,6 @@ public class MemberService {
     }
 
     public void showAllMembers() {
-
         MemberFinder finder = new MemberFinder();
         System.out.println("================ 가입된 회원 목록 ===============");
 
@@ -35,6 +31,5 @@ public class MemberService {
             }
         }
         System.out.println("----------------------------------------------");
-
     }
 }
