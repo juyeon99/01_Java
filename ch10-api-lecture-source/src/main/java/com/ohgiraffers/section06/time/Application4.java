@@ -6,7 +6,6 @@ import java.time.ZonedDateTime;
 
 public class Application4 {
     public static void main(String[] args) {
-
         /*
          * isBefore() : 인자보다 과거일 때 true
          * isAfter() : 인자보다 미래일 때 true

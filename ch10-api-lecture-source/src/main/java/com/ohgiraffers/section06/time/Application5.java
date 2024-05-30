@@ -8,7 +8,6 @@ import java.time.format.DateTimeFormatter;
 public class Application5 {
 
     public static void main(String[] args) {
-
         /*
          * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html
          * */
@@ -38,6 +37,5 @@ public class Application5 {
 
         System.out.println(dateFormat);
         System.out.println(timeFormat);
-
     }
 }
