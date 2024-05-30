@@ -7,20 +7,17 @@ import java.util.GregorianCalendar;
 public class Application2 {
 
     public static void main(String[] args) {
-
         /*
          * Calendar 클래스를 이용한 인스턴스 생성 방법에는 두 가지 방법이 있다.
          * 1. getInstance() static 메소드를 이용해서 인스턴스를 반환받는 방법
-         * 2. 후손 클래스인 GregorianCalendar클래스를 이용해서 인스턴스를 생성하는 방법
+         * 2. 후손 클래스인 GregorianCalendar 클래스를 이용해서 인스턴스를 생성하는 방법
          * */
 
         Calendar calendar = Calendar.getInstance();
-
         System.out.println(calendar.toString());
 
-        Calendar gregoriancalendar = new GregorianCalendar();
-
-        System.out.println(gregoriancalendar);
+        Calendar gregorianCalendar = new GregorianCalendar();
+        System.out.println(gregorianCalendar);
 
         // month 1 ~ 12
         // 0 ~ 11

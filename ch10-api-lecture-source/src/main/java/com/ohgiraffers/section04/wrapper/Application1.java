@@ -19,7 +19,7 @@ public class Application1 {
         * Boxing & Unboxing
         *
         * 기본타입에서 Wrapper 클래스의 인스턴스로 인스턴스화하는 것을 Boxing
-        * Wrapper 클래스 타입의 인스턴스를 기본 타입으로 변경하는 것을 Boxing
+        * Wrapper 클래스 타입의 인스턴스를 기본 타입으로 변경하는 것을 UnBoxing
         * */
 
         int intValue = 20;

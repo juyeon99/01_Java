@@ -3,7 +3,7 @@ package com.ohgiraffers.api.hair;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.util.Objects;
+import java.time.format.DateTimeFormatter;
 
 public class Application {
     public static void main(String[] args) {
@@ -112,7 +112,7 @@ public class Application {
         Hair[] customers = new Hair[strArr.length];
 
         for (int i = 0; i < strArr.length; i++){
-            String[] arr = strArr[i].split(",");
+            String[] arr = strArr[i].split(",",-1);
             int id = Integer.parseInt(arr[0]);
             String first_name = arr[1];
             String last_name = arr[2];
@@ -170,5 +170,8 @@ public class Application {
             Hair h = new Hair(id,first_name,last_name,email,gender,birthday,reservation_date,reservation_time,created_at);
             customers[i] = h;
         }
+
+        Hair hair = new Hair();
+        hair.printAllCustomers(customers);
     }
 }

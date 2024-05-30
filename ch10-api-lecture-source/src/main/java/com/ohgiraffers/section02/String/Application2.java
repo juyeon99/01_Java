@@ -37,7 +37,7 @@ public class Application2 {
         *           따라서 문자열 인스턴스 생성 방식과 상관없이 동일한 문자열인지 비교하기
         *           위해서는 == 연산 대신에 equals() 메소드 사용.
         * */
-        System.out.println("str1.equals(str3): " + str1.equals(str3));
-        System.out.println("str1.equals(str4): " + str1.equals(str4));
+        System.out.println("str1.equals(str3): " + str1.equals(str3));  // true
+        System.out.println("str1.equals(str4): " + str1.equals(str4));  // true
     }
 }

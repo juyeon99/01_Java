@@ -4,11 +4,13 @@ public class StringProcess {
     public String preChar(String str) {
         // 문자열을 넘겨받아, 첫글자를 대문자로 바꾸는 메서드
 
+        // 방법 1
 //        char newChar = str.charAt(0);
 //        newChar = Character.toUpperCase(newChar);
 //        str.replace(str.charAt(0),newChar);
 //        return str;
 
+        // 방법 2
         String newStr = str.substring(0,1);
         newStr = newStr.toUpperCase();
         newStr += str.substring(1);

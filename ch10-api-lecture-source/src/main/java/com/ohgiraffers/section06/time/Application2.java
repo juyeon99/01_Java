@@ -6,7 +6,6 @@ import java.time.ZonedDateTime;
 
 public class Application2 {
     public static void main(String[] args) {
-
         /* 수업목표. time 패키지의 클래스들이 가지고있는 필드값들을 확인할 수 있다. */
         /* 필드값 가져오기 */
         LocalTime localTime = LocalTime.now();
@@ -30,7 +29,5 @@ public class Application2 {
         System.out.println("zonedDateTime : " + zonedDateTime);
         System.out.println("zone 정보 : " + zonedDateTime.getZone());
         System.out.println("시차 : " + zonedDateTime.getOffset());
-
-
     }
 }
