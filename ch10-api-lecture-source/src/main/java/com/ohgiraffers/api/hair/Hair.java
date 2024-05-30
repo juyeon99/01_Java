@@ -118,4 +118,19 @@ public class Hair {
         }
         System.out.println("============================");
     }
+
+    @Override
+    public String toString() {
+        return "Hair{" +
+                "id=" + id +
+                ", first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", birthday=" + birthday +
+                ", reservation_date=" + reservation_date +
+                ", reservation_time=" + reservation_time +
+                ", created_at=" + created_at +
+                '}';
+    }
 }
