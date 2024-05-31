@@ -5,7 +5,8 @@ import java.util.Stack;
 public class Application3 {
     public static void main(String[] args) {
         /*
-        * LIFO:
+        * Stack
+        * LIFO 방식의 자료구조
         * */
         Stack<Integer> intStack = new Stack<>();
         intStack.push(11);
