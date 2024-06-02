@@ -13,7 +13,7 @@ public class Application4 {
         * 대부분의 queue는 LinkedList 이용
         * */
 
-        // queue는 interface이기 때문에 자체로 인스턴스 생성 불가
+        // Queue는 interface이기 때문에 자체로 인스턴스 생성 불가
 //        Queue<String> queue = new Queue<String>(); XXX
         Queue<String> queue = new LinkedList<>();
 
@@ -27,7 +27,7 @@ public class Application4 {
         System.out.println("queue = " + queue);
 
         /*
-        * queue에서 데이터를 꺼내는 방식
+        * Queue에서 데이터를 꺼내는 방식
         * peek(): queue의 맨 앞 element(가장 먼저 들어온 element) 반환
         * poll(): queue의 맨 앞 element(가장 먼저 들어온 element) 반환 후 제거
         * */
