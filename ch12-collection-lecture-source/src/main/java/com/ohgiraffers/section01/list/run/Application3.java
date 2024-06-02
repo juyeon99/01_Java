@@ -55,6 +55,5 @@ public class Application3 {
 //        System.out.println("pop(): " + intStack.pop());       // EmptyStackException
 
         System.out.println("intStack: " + intStack);
-
     }
 }
