@@ -27,6 +27,6 @@ public class Application1 {
             // exception 출력 - 로그 남김
             e.printStackTrace();
         }
-        System.out.println("종료합니다.");
+        System.out.println("프로그램을 종료합니다.");
     }
 }
