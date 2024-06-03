@@ -4,11 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class SubClass extends SuperClass{
-    // 1. 예외없이 오버라이딩 가능
+    // 1. Exception 없이 오버라이딩 가능
 //    @Override
 //    public void method(){}
 
-    // 2. 같은 예외를 던지는 구문으로 오버라이딩 가능
+    // 2. 같은 Exception을 던지는 구문으로 오버라이딩 가능
 //    @Override
 //    public void method() throws IOException {}
 
