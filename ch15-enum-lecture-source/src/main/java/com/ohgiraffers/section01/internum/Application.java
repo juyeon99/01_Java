@@ -27,25 +27,18 @@ public class Application {
 
         // 2. 문자열로 출력하기가 까다롭다.
         int num = 0;
-//        String subjectText = "";
-//        switch (num){   // 변수명을 알기가 까다로움
-//            case Subjects.JAVA: subjectText = "JAVA"; break;
-//            case Subjects.JDBC: subjectText = "JAVA"; break;
-//            case Subjects.ORACLE: subjectText = "JAVA"; break;
-//        }
-//        System.out.println("subjectText: " + subjectText);
-        printSubject(num);
+        printSubject(num);  // 변수명을 알기가 까다로움 (변수명 하나 알기 위해 switch case 사용)
 
         // 3. 타입 안전을 보장할 수 없다.
-        printSubject(5);    // 5: 존재하지 X
+        printSubject(5);    // 5는 존재하지 X
     }
 
     public static void printSubject(int num){
         String subjectText = "";
         switch (num){
-            case Subjects.JAVA: subjectText = "JAVA"; break;
-            case Subjects.JDBC: subjectText = "JAVA"; break;
-            case Subjects.ORACLE: subjectText = "JAVA"; break;
+            case Subjects.JAVA:   subjectText = "JAVA";   break;
+            case Subjects.JDBC:   subjectText = "JDBC";   break;
+            case Subjects.ORACLE: subjectText = "ORACLE"; break;
         }
         System.out.println("subjectText: " + subjectText);
     }
