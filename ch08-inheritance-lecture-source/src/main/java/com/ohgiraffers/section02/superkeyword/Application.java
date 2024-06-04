@@ -5,13 +5,13 @@ import java.util.Date;
 public class Application {
     public static void main(String[] args) {
         /*
-        * super: 자식클래스를 이용해서 객체를 생성할 때 부모 generator를 호출하여
+        * super: 자식클래스를 이용해서 객체를 생성할 때 부모 constructor를 호출하여
         *        부모 클래스의 인스턴스도 함께 생성하게 된다.
         *        이때 생성한 부모의 인스턴스 주소를 보관하는 레퍼런스 변수.
         *
-        * super(): 부모 generator를 호출. 인자와 parameter의 타입, 개수, 순서가 일치하는 부모 generator를 호출
-        *          this()가 해당 클래스 내의 다른 generator를 호출하는 구문이라면
-        *          super()은 부모 클래스가 가지는 private generator를 제외한 나머지 generator를 호출할 수 있도록 한 구문
+        * super(): 부모 generator를 호출. 인자와 parameter의 타입, 개수, 순서가 일치하는 부모 constructor를 호출
+        *          this()가 해당 클래스 내의 다른 constructor를 호출하는 구문이라면
+        *          super()은 부모 클래스가 가지는 private constructor를 제외한 나머지 constructor를 호출할 수 있도록 한 구문
         * */
 
         // Product -> Computer

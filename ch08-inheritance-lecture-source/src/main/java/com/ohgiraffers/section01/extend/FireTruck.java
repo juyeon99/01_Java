@@ -9,20 +9,16 @@ public class FireTruck extends Car{
     * 부모의 private 멤버는 접근 불가
     * */
 
-    // default constructor
     public FireTruck(){
-
-        // calls parent class' generator
+        // calls parent class' constructor
         // 컴파일러가 자동으로 추가해줘서 작성하지 않아도 됨
 //        super();
 
         System.out.println("FireTruck default constructor");
     }
 
-    // FireTruck 목적에 맞게 메소드 재정의 = overriding
-
     /*
-    * @Override annotation
+    * @Override
     * overriding이 정상적으로 작성된 것인지 체크해주는 기능
     * 오버라이딩 하는 메소드는 기본적으로 부모 메소드 선언 내용을 그대로 작성해야 함
     * */
@@ -43,5 +39,4 @@ public class FireTruck extends Car{
     public void sprayWater(){
         System.out.println("불난 곳을 발견했습니다. 물을 뿌립니다.");
     }
-
 }
