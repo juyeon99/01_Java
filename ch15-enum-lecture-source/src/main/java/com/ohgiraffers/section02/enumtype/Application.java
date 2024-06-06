@@ -6,7 +6,7 @@ public class Application {
         Subjects s1 = Subjects.JAVA;
         Subjects s2 = Subjects.HTML;
 
-        // toString을 이용해 문자열로 관리하기 쉽다.
+        // toString()을 이용해 문자열로 관리하기 쉽다.
         System.out.println(Subjects.JAVA.toString());
 
         // values()를 이용해 상수값 배열 반환
@@ -17,7 +17,7 @@ public class Application {
         }
 
         // 타입 안전 보장
-//        Subjects s3 = 0; XXX
+//        Subjects s3 = 0; // XXX
         Subjects s4 = Subjects.JAVA;
     }
 }
