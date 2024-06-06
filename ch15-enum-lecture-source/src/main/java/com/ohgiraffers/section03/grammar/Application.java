@@ -15,7 +15,7 @@ public class Application {
 
         /*
         * ordinal(): 작성된 순으로 생성되는 고유 번호 반환
-        * name(): 작성된 상수 이름을 String으로 반환
+        * name():    작성된 상수 이름을 String으로 반환
         * */
         System.out.println("consumer.ordinal() = " + consumer.ordinal());
         System.out.println("consumer.name() = " + consumer.name());
