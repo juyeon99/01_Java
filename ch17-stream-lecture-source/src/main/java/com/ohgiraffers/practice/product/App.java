@@ -26,10 +26,10 @@ public class App {
 
         // 3. 디초코 상표명이 "dechocolatecoffee"로 변경되었다.
         //    스트림상에서 디초코 상품들의 상표명을 "dechocolatecoffee"로 변경하고 출력하세요.
-//        app.printChangedBrandName();
+        app.printChangedBrandName();
 
         // 4.금액이 십만원 이상인 상품을 따로 list로 생성하고 출력하세요.
-        app.printPriceOver100k();
+//        app.printPriceOver100k();
     }
 
     public void printElectricDevices(){
@@ -42,8 +42,8 @@ public class App {
         list.stream()
                 .filter(product -> product.getBrand().equals("apple"))
                 .forEach(product -> {
-                    product.setPrice((int) (product.getPrice() * 0.9));
-                    System.out.println(product);
+//                    product.setPrice((int) (product.getPrice() * 0.9));
+                    System.out.println(product.getProductName() + " - 할인된 가격: " + (int) (product.getPrice() * 0.9));
                 });
     }
 
@@ -52,8 +52,9 @@ public class App {
                 .filter(product -> product.getBrand().equals("디초코"))
                 .forEach(product -> {
                     product.setBrand("dechocolatecoffee");
-                    System.out.println(product);
+//                    System.out.println(product);
                 });
+        list.stream().forEach(System.out::println);
     }
 
     public void printPriceOver100k(){
