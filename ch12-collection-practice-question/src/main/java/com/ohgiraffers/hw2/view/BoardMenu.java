@@ -1,7 +1,10 @@
 package com.ohgiraffers.hw2.view;
 
 import com.ohgiraffers.hw2.controller.BoardManager;
+import com.ohgiraffers.hw2.model.comparator.*;
+import com.ohgiraffers.hw2.model.dto.BoardDTO;
 
+import java.util.Date;
 import java.util.Scanner;
 
 public class BoardMenu {
@@ -11,6 +14,15 @@ public class BoardMenu {
     public void mainMenu(){
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
+
+        // --- test input ---
+        bm.insertBoard(new BoardDTO(0,"ddd","writer1",new Date(),"content",0));
+        bm.insertBoard(new BoardDTO(1,"bbb","writer1",new Date(),"content",0));
+        bm.insertBoard(new BoardDTO(2,"ccc","writer2",new Date(),"content",0));
+        bm.insertBoard(new BoardDTO(3,"aaaa","writer1",new Date(),"content",0));
+        bm.insertBoard(new BoardDTO(4,"aa","writer2",new Date(),"content",0));
+        // --- end ---
+
         while(flag){
             System.out.println();
             System.out.println("*** 게시글 서비스 프로그램 ***");
@@ -62,22 +74,22 @@ public class BoardMenu {
         sc.nextLine();
         switch (input){
             case 1:
-//                bm.sortList(AscBoardNo());
-//                break;
-//            case 2:
-//                bm.sortList(DescBoardNo());
-//                break;
-//            case 3:
-//                bm.sortList(AscBoardDate());
-//                break;
-//            case 4:
-//                bm.sortList(AscBoardDate());
-//                break;
-//            case 5:
-//                bm.sortList(AscBoardTitle());
-//                break;
-//            case 6:
-//                bm.sortList(DescBoardTitle());
+                bm.sortList(new AscBoardNo());
+                break;
+            case 2:
+                bm.sortList(new DescBoardNo());
+                break;
+            case 3:
+                bm.sortList(new AscBoardDate());
+                break;
+            case 4:
+                bm.sortList(new DescBoardDate());
+                break;
+            case 5:
+                bm.sortList(new AscBoardTitle());
+                break;
+            case 6:
+                bm.sortList(new DescBoardTitle());
                 break;
             case 7:
                 break;
