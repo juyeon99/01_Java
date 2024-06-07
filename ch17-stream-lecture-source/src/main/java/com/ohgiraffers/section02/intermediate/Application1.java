@@ -1,6 +1,5 @@
 package com.ohgiraffers.section02.intermediate;
 
-import java.net.StandardSocketOptions;
 import java.util.stream.IntStream;
 
 public class Application1 {

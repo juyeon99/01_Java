@@ -22,11 +22,11 @@ public class App {
 //        app.printElectricDevices();
 
         // 2.apple사가 전제품 10% 할인한다고 할때, 해당제품명과 할인된 가격을 출력하세요.
-//        app.printAppleDiscount();
+        app.printAppleDiscount();
 
         // 3. 디초코 상표명이 "dechocolatecoffee"로 변경되었다.
         //    스트림상에서 디초코 상품들의 상표명을 "dechocolatecoffee"로 변경하고 출력하세요.
-        app.printChangedBrandName();
+//        app.printChangedBrandName();
 
         // 4.금액이 십만원 이상인 상품을 따로 list로 생성하고 출력하세요.
 //        app.printPriceOver100k();
@@ -41,9 +41,13 @@ public class App {
     public void printAppleDiscount(){
         list.stream()
                 .filter(product -> product.getBrand().equals("apple"))
+//                .map(product -> {
+//                    product.setPrice((int)(product.getPrice()*0.9));
+//                    return product;
+//                })
                 .forEach(product -> {
 //                    product.setPrice((int) (product.getPrice() * 0.9));
-                    System.out.println(product.getProductName() + " - 할인된 가격: " + (int) (product.getPrice() * 0.9));
+                    System.out.println(product.getProductName() + " - 할인된 가격: " + (int) (product.getPrice()*0.9));
                 });
     }
 

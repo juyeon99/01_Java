@@ -28,7 +28,7 @@ public class Application1 {
 
         // Builder를 활용한 스트림 생성
         System.out.println("========== Builder를 활용한 스트림 생성 ==========");
-        Stream<String> builderStream = Stream.<String>builder()
+        Stream<String> builderStream = Stream.<String>builder() // builder는 기존 list를 Stream으로 변환하는게 아니라 Stream을 생성 후 element를 하나씩 추가할 수 있게끔 하는 역할. (Stream 자체가 기존 리스트를 돕기위해 만들어진 기능이라 많이 쓰이지는 않음)
                 .add("홍길동")
                 .add("유관순")
                 .add("윤봉길")
