@@ -43,7 +43,6 @@ public class Application1 {
         BufferedReader breader = null;
         try {
             breader = new BufferedReader(new FileReader("src/main/java/com/ohgiraffers/section03/filterstream/testBuffered.txt"));
-
             String temp;
 
             // readLine(): buffer의 한 줄을 읽어와서 String으로 반환
