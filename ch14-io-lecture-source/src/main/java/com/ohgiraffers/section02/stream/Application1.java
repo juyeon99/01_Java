@@ -46,7 +46,6 @@ public class Application1 {
 
             // read() 메소드의 인자로 byte 배열을 넣으면 파일을 읽어서 byte 배열로 반환
             fin.read(barr);
-
             for (int i = 0; i < barr.length; i++){
                 System.out.println((char) barr[i]);
             }
