@@ -4,7 +4,8 @@ public class Product implements InterProduct{
     /*
      * 클래스에서 인터페이스를 상속받을 때에는 implements
      * 인터페이스는 다중상속 가능
-     * extends로 다른 클래스를 상속받는 경우에도
+     * extends로 다른 클래스를 상속받는 경우에도 그것과 별개로 인터페이스도 추가 상속 가능
+     * 단, extends 키워드 앞에 작성하고, implements를 뒤에 작성한다 (바뀌면 에러)
      * */
 
     @Override
